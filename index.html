@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agnetta Mawia | Web Developer &amp; IT Support</title>
+  <meta name="description" content="Portfolio of Agnetta Mawia, a Computer Science student and web developer based in Nairobi, Kenya." />
+  <script>
+    // Apply the saved theme before the page paints to avoid a flash
+    (function () {
+      try {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">Agnetta<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme">&#9790;</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Agnetta Mawia</h1>
+      <p class="tagline">Computer Science student, web developer and IT support technician based in Nairobi, Kenya.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View my projects</a>
+        <a class="btn btn-outline" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <h2>About me</h2>
+      <p>
+        I'm a Computer Science student at Mount Kenya University who enjoys building clean,
+        responsive web applications and keeping computer systems running smoothly. I completed web
+        development training at MYC Tech Academy and an industry attachment at Teach2Give, where I
+        worked with Git and GitHub in a team.
+      </p>
+      <p>
+        Before moving deeper into software, I worked as IT support at Magoso Primary School during
+        holidays and as a volunteer, installing systems, fixing hardware and software problems and
+        helping staff use technology with confidence. That mix of support and development shapes how
+        I build: practical, reliable and easy to use.
+      </p>
+    </section>
+
+    <section id="skills" class="section container reveal">
+      <h2>Skills</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Frontend</h3>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React</li></ul>
+        </article>
+        <article class="card">
+          <h3>Backend</h3>
+          <ul class="tags"><li>Node.js</li><li>Django</li><li>Python</li></ul>
+        </article>
+        <article class="card">
+          <h3>Design &amp; Tools</h3>
+          <ul class="tags"><li>Figma</li><li>Git</li><li>GitHub</li></ul>
+        </article>
+        <article class="card">
+          <h3>IT Support</h3>
+          <ul class="tags"><li>Windows</li><li>Linux</li><li>Troubleshooting</li><li>Basic networking</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section container reveal">
+      <h2>Experience &amp; Training</h2>
+      <ol class="timeline">
+        <li>
+          <span class="when">2025</span>
+          <h3>Web Development Attachment &middot; Teach2Give</h3>
+          <p>Built responsive web applications with HTML, CSS and JavaScript in a team, using Git and GitHub for collaboration.</p>
+        </li>
+        <li>
+          <span class="when">2023 &ndash; 2024</span>
+          <h3>IT Support Technician (Part-time, Holiday &amp; Volunteer) &middot; Magoso Primary School</h3>
+          <p>Installed and maintained computers, ran system updates, fixed hardware and software faults and supported staff.</p>
+        </li>
+        <li>
+          <span class="when">2022</span>
+          <h3>Web Development Training &middot; MYC Tech Academy</h3>
+          <p>Studied HTML, CSS, JavaScript, React, Node.js, Django and Figma, and built full-stack projects.</p>
+        </li>
+        <li>
+          <span class="when">2021 &ndash; 2026</span>
+          <h3>BSc. Computer Science &middot; Mount Kenya University</h3>
+          <p>Studying Computer Science while building practical experience alongside my coursework.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Task Manager App</h3>
+          <p>Full-stack task manager with a React frontend and a Django REST API. Add, edit, filter, search and complete tasks.</p>
+          <ul class="tags"><li>React</li><li>Django REST</li><li>SQLite</li></ul>
+          <a class="card-link" href="https://github.com/agnettamawia927-afk/task-manager-app" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="card">
+          <h3>School IT Helpdesk</h3>
+          <p>Ticketing and equipment inventory system for a school IT office, inspired by my IT support experience.</p>
+          <ul class="tags"><li>Django</li><li>Python</li><li>SQLite</li></ul>
+          <a class="card-link" href="https://github.com/agnettamawia927-afk/school-it-helpdesk" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="card">
+          <h3>This Portfolio</h3>
+          <p>A responsive, accessible portfolio with a light/dark theme, built with plain HTML, CSS and JavaScript.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a class="card-link" href="https://github.com/agnettamawia927-afk/portfolio-website" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <h2>Contact</h2>
+      <p>Have a project in mind or want to work together? Send me a message.</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required />
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+      <p class="contact-direct">
+        Or reach me directly:
+        <a href="mailto:agnettamawia927@gmail.com">agnettamawia927@gmail.com</a> &middot;
+        <a href="https://github.com/agnettamawia927-afk" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Agnetta Mawia &middot; Nairobi, Kenya</p>
+  </footer>
+</body>
+</html>
